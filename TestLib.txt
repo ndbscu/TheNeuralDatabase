@@ -1,0 +1,1079 @@
+;Neural Database Test Library - 160+ test cases with acceptable results
+;(c) Copyright 2024 Gary J. Lassiter. All Rights Reserved.
+;
+;Format:
+;		;
+;		;#Test Number.
+;		@"Ndb Inquiry"
+;		="RESULT_1"
+;		="RESULT_2"
+;		    etc.
+;		#end
+;		;
+;
+;	Some test cases have multiple results because large databases can
+;	produce valid alternative interpretations of an Ndb 1nquiry.
+;
+;----------
+;
+;
+;#1.
+@"abbreviazethis dy"
+="ABBREVIATE THIS DAY"
+="ABBREVIATE THIS DRY"
+="ABBREVIATE THIS DYE"
+#end
+;
+;
+;#2.
+@"thisis"
+="THIS IS"
+#end
+;
+;
+;#3.
+@"this is"
+="THIS IS"
+#end
+;
+;
+;#4.
+@"to day"
+="TO DAY"
+#end
+;
+;
+;#5.
+@"to a day"
+="TO A DAY"
+#end
+;
+;
+;#6.
+@"toady"
+="TOAD"
+="TO LADY"
+="TOADY"
+="TOADYISH"
+="TO A DYE"
+="TO A DAY"
+#end
+;
+;
+;#7.
+@"yup itis"
+="YUP IT IS"
+="YUP I TIS"
+#end
+;
+;
+;#8.
+@"yupitis"
+="YUP IT IS"
+="YUP I TIS"
+#end
+;
+;
+;#9.
+@"yupit is"
+="YUP IT IS"
+#end
+;
+;
+;#10.
+@"nope it is not"
+="NOPE IT IS NOT"
+#end
+;
+;
+;#11.
+@"nopeitisnot"
+="NOPE IT IS NOT"
+="NOPE I TIS NOT"
+#end
+;
+;
+;#12.
+@"yesitis"
+="YES IT IS"
+="YES I TIS"
+#end
+;
+;
+;#13.
+@"yes itis"
+="YES IT IS"
+="YES I TIS"
+#end
+;
+;
+;#14.
+@"yesit is"
+="YES IT IS"
+#end
+;
+;
+;#15.
+@"noitisnot"
+="NO IT IS NOT"
+="NO I TIS NOT"
+#end
+;
+;
+;#16.
+@"no it isnot"
+="NO IT IS NOT"
+#end
+;
+;
+;#17.
+@"to be or not to be"
+="TO BE OR NOT TO BE"
+#end
+;
+;
+;#18.
+@"tobeornottobe"
+="TO BE OR NOT TO BE"
+#end
+;
+;
+;#19.
+@"or not to be"
+="OR NOT TO BE"
+#end
+;
+;
+;#20.
+@"ornottobe"
+="OR NOT TO BE"
+#end
+;
+;
+;#21.
+@"froday"
+="FROM DAY"
+="FROG DAY"
+="FRIDAY"
+#end
+;
+;
+;#22.
+@"wednesady"
+="WEDNESDAY"
+#end
+;
+;
+;#23.
+@"thursd frday"
+="THURSDAY FRIDAY"
+#end
+;
+;
+;#24.
+@"thursdfrday"
+="THURSDAY FRIDAY"
+#end
+;
+;
+;#25.
+@"thursdfridy"
+="THURSDAY FRIDAY"
+#end
+;
+;
+;#26.
+@"thursd fridy"
+="THURSDAY FRIDAY"
+#end
+;
+;
+;#27.
+@"ffrriidayyday"
+="FRIDAY DAY"
+#end
+;
+;
+;#28.
+@"ffrriidayydayy"
+="FRIDAY DAY"
+#end
+;
+;
+;#29.
+@"ffrriidayy day"
+="FRIDAY DAY"
+#end
+;
+;
+;#30.
+@"ffrriidayy dayy"
+="FRIDAY DAY"
+#end
+;
+;
+;#31.
+@"ffrriiddaayy"
+="FRIDAY"
+#end
+;
+;
+;#32.
+@"ffrriiday"
+="FRIDAY"
+#end
+;
+;
+;#33.
+@"frsday"
+="FRIDAY"
+="FIRS DAY"
+="FURS DAY"
+#end
+;
+;
+;#34.
+@"frfrfrfriday"
+="FRIDAY"
+#end
+;
+;
+;#35.
+@"frfrfriday"
+="FRIDAY"
+#end
+;
+;
+;#36.
+@"frifrifriday"
+="FRIDAY"
+#end
+;
+;
+;#37.
+@"fridayyyyayy"
+="FRIDAY"
+="FRIDAY YAY"
+#end
+;
+;
+;#38.
+@"fridayyyy"
+="FRIDAY"
+#end
+;
+;
+;#39.
+@"friiiiiday"
+="FRIDAY"
+#end
+;
+;
+;#40.
+@"ffffriday"
+="FRIDAY"
+#end
+;
+;
+;#41.
+@"frifrifrfriday"
+="FRIDAY"
+#end
+;
+;
+;#42.
+@"frifrifrfrifrfriday"
+="FRIDAY"
+#end
+;
+;
+;#43.
+@"w today"
+="TODAY"
+="WE TODAY"
+#end
+;
+;
+;#44.
+@"we today"
+="WE TODAY"
+#end
+;
+;
+;#45.
+@"wed today"
+="WED TODAY"
+#end
+;
+;
+;#46.
+@"wedne today"
+="WED ONE TODAY"
+="WED NEW TODAY"
+="WEDNESDAY TODAY"
+="WED NEB TODAY"
+="WE DYNE TODAY"
+="WE DONE TODAY"
+="WE DANE TODAY"
+="WE DINE TODAY"
+="WE DUNE TODAY"
+="WED NEE TODAY"
+#end
+;
+;
+;#47.
+@"wednes today"
+="WEDNESDAY TODAY"
+#end
+;
+;
+;#48.
+@"wednesd today"
+="WEDNESDAY TODAY"
+#end
+;
+;
+;#49.
+@"wednesda today"
+="WEDNESDAY TODAY"
+#end
+;
+;
+;#50.
+@"wednesday today"
+="WEDNESDAY TODAY"
+#end
+;
+;
+;#51.
+@"wednsday"
+="WEDNESDAY"
+#end
+;
+;
+;#52.
+@"wedns"
+="WENS"
+="WED"
+#end
+;
+;
+;#53.
+@"wedns today"
+="WEDNESDAY TODAY"
+="WENS TODAY"
+="WED TODAY"
+#end
+;
+;
+;#54.
+@"wedns today wedns"
+="WEDNESDAY TODAY WEDNESDAY"
+="WEDNESDAY TODAY WED"
+="WED TODAY WEDNESDAY"
+="WED TODAY WED"
+="WENS TODAY WENS"
+="WENS TODAY WED"
+#end
+;
+;
+;#55.
+@"wedns today wedns today"
+="WEDNESDAY TODAY WEDNESDAY TODAY"
+="WED TODAY WEDNESDAY TODAY"
+="WEDNESDAY TODAY WED TODAY"
+="WENS TODAY WEDNESDAY TODAY"
+="WEDNESDAY TODAY WENS TODAY"
+="WED TODAY WED TODAY"
+="WENS TODAY WED TODAY"
+="WED TODAY WENS TODAY"
+="WENS TODAY WENS TODAY"
+#end
+;
+;
+;#56.
+@"mndaytusdaywednsdaythurday"
+="MONDAY TUESDAY WEDNESDAY THURSDAY"
+#end
+;
+;
+;#57.
+@"mnday tusday wednsday thurday"
+="MONDAY TUESDAY WEDNESDAY THURSDAY"
+#end
+;
+;
+;#58.
+@"todayisfriday"
+="TODAY IS FRIDAY"
+#end
+;
+;
+;#59.
+@"todayisfri day"
+="TODAY IS FRIDAY"
+#end
+;
+;
+;#60.
+@"today f r i d a y i s"
+="TODAY FRIDAY IS"
+#end
+;
+;
+;#61.
+@"todayf r i d a yi s"
+="TODAY FRIDAY IS"
+#end
+;
+;
+;#62.
+@"thursaday"
+="THURSDAY"
+="THURSDAY A DAY"
+#end
+;
+;
+;#63.
+@"thursaaday"
+="THURSDAY A DAY"
+#end
+;
+;
+;#64.
+@"thursnday"
+="THURSDAY"
+#end
+;
+;
+;#65.
+@"thursoday"
+="THURSDAY"
+#end
+;
+;
+;#66.
+@"thursooday"
+="THURSDAY"
+="THURSDAY TODAY"
+="THUS TODAY"
+#end
+;
+;
+;#67.
+@"thurs today"
+="THURSDAY TODAY"
+#end
+;
+;
+;#68.
+@"thus today"
+="THUS TODAY"
+#end
+;
+;
+;#69.
+@"thurus today"
+="THRUST TODAY"
+="THRUSH TODAY"
+#end
+;
+;
+;#70.
+@"mississippi"
+="MISSISSIPPI"
+#end
+;
+;
+;#71.
+@"missippi"
+="MISSISSIPPI"
+="MISS IP PI"
+="MISS I PI"
+#end
+;
+;
+;#72.
+@"missisipi"
+="MISSISSIPPI"
+="MISSIS I PI"
+="MISS IS I PI"
+="MISS I SIP I"
+#end
+;
+;
+;#73.
+@"hope topinpoint the genetic"
+="HOPE TO PINPOINT THE GENETIC"
+#end
+;
+;
+;#74.
+@"pinpointthe"
+="PINPOINT THE"
+#end
+;
+;
+;#75.
+@"hopetopinpoint"
+="HOPE TO PINPOINT"
+#end
+;
+;
+;#76.
+@"hopetopin point"
+="HOPE TO PIN POINT"
+="HOPE TOP IN POINT"
+#end
+;
+;
+;#77.
+@"hopetopin"
+="HOPE TO PIN"
+="HOPE TOP IN"
+#end
+;
+;
+;#78.
+@"thursfriday"
+="THURSDAY FRIDAY"
+#end
+;
+;
+;#79.
+@"wednesdaythurs"
+="WEDNESDAY THURSDAY"
+#end
+;
+;
+;#80.
+@"wednesdaythursfridaysaturday"
+="WEDNESDAY THURSDAY FRIDAY SATURDAY"
+#end
+;
+;
+;#81.
+@"tusday"
+="TUESDAY"
+#end
+;
+;
+;#82.
+@"tusdaywe"
+="TUESDAY WE"
+#end
+;
+;
+;#83.
+@"tusdayw e"
+="TUESDAY WE"
+#end
+;
+;
+;#84.
+@"tusda ywe"
+="TUESDAY WE"
+#end
+;
+;
+;#85.
+@"mndaytusday"
+="MONDAY TUESDAY"
+#end
+;
+;
+;#86.
+@"tusdaywednsday"
+="TUESDAY WEDNESDAY"
+#end
+;
+;
+;#87.
+@"mondaytuesdayfridaysunday"
+="MONDAY TUESDAY FRIDAY SUNDAY"
+="MONDAY TUESDAY FRIDAY SUN DAY"
+#end
+;
+;
+;#88.
+@"mondaytuesdayfridaysundayfriday"
+="MONDAY TUESDAY FRIDAY SUNDAY FRIDAY"
+#end
+;
+;
+;#89.
+@"hursdayfridaaturday"
+="THURSDAY FRIDAY SATURDAY"
+#end
+;
+;
+;#90.
+@"undayondayuesdayednesdayhursdayfridaaturday"
+="SUNDAY ON DAY TUESDAY WEDNESDAY THURSDAY FRIDAY SATURDAY"
+="SUNDAY MONDAY TUESDAY WEDNESDAY THURSDAY FRIDAY SATURDAY"
+#end
+;
+;
+;#91.
+@"aturday"
+="SATURDAY"
+#end
+;
+;
+;#92.
+@"riday"
+="FRIDAY"
+#end
+;
+;
+;#93.
+@"unday"
+="SUNDAY"
+#end
+;
+;
+;#94.
+@"thursiliketoday"
+="THURSDAY I LIKE TODAY"
+#end
+;
+;
+;#95.
+@"thursilike"
+="THURSDAY I LIKE"
+#end
+;
+;
+;#96.
+@"thursil ike"
+="THURSDAY I LIKE"
+="THURIBLE IKE"
+#end
+;
+;
+;#97.
+@"thursi l ike"
+="THURSDAY I LIKE"
+#end
+;
+;
+;#98.
+@"wednes i like today"
+="WEDNESDAY I LIKE TODAY"
+#end
+;
+;
+;#99.
+@"wednesy i like today"
+="WEDNESDAY I LIKE TODAY"
+#end
+;
+;
+;#100.
+@"wednesilike"
+="WEDNESDAY I LIKE"
+#end
+;
+;
+;#101.
+@"wednesyilike"
+="WEDNESDAY I LIKE"
+#end
+;
+;
+;#102.
+@"fridaylightpinpointpin"
+="FRIDAY LIGHT PINPOINT PIN"
+#end
+;
+;
+;#103.
+@"fridaylight pinpointpin"
+="FRIDAY LIGHT PINPOINT PIN"
+#end
+;
+;
+;#104.
+@"fridaylightpin pointpin"
+="FRIDAY LIGHT PIN POINT PIN"
+#end
+;
+;
+;#105.
+@"sndaymndaytusday"
+="SUNDAY MONDAY TUESDAY"
+#end
+;
+;
+;#106.
+@"mondaylike"
+="MONDAY LIKE"
+#end
+;
+;
+;#107.
+@"mndaylike"
+="MONDAY LIKE"
+#end
+;
+;
+;#108.
+@"mnday"
+="MONDAY"
+#end
+;
+;
+;#109.
+@"ilikeit"
+="I LIKE IT"
+#end
+;
+;
+;#110.
+@"itilike"
+="IT I LIKE"
+#end
+;
+;
+;#111.
+@"iitlike"
+="I IT LIKE"
+#end
+;
+;
+;#112.
+@"likeiti"
+="LIKE IT I"
+#end
+;
+;
+;#113.
+@"likeiit"
+="LIKE I IT"
+#end
+;
+;
+;#114.
+@"iit"
+="I IT"
+#end
+;
+;
+;#115.
+@"iitiit"
+="I IT I IT"
+#end
+;
+;
+;#116.
+@"iti"
+="IT I"
+#end
+;
+;
+;#117.
+@"it iiti"
+="IT I IT I"
+#end
+;
+;
+;#118.
+@"itiiti"
+="IT I IT I"
+#end
+;
+;
+;#119.
+@"likeiititilike"
+="LIKE I IT IT I LIKE"
+#end
+;
+;
+;#120.
+@"likeiit itilike"
+="LIKE I IT IT I LIKE"
+#end
+;
+;
+;#121.
+@"thursdayfridaywednesday"
+="THURSDAY FRIDAY WEDNESDAY"
+#end
+;
+;
+;#122.
+@"what is toady"
+="WHAT IS TOAD"
+="WHAT IS TOADY"
+#end
+;
+;
+;#123.
+@"whatdayisit"
+="WHAT DAY IS IT"
+="WHAT DAY I SIT"
+#end
+;
+;
+;#124.
+@"whatdayis it"
+="WHAT DAY IS IT"
+#end
+;
+;
+;#125.
+@"in the abbey abbots abbreviate abbacy"
+="IN THE ABBEY ABBOTS ABBREVIATE ABBACY"
+#end
+;
+;
+;#126.
+@"intheabbeyabbotsabbreviateabbacy"
+="IN THE ABBEY ABBOTS ABBREVIATE ABBACY"
+#end
+;
+;
+;#127.
+@"this is a test"
+="THIS IS A TEST"
+#end
+;
+;
+;#128.
+@"thisisatest"
+="THIS IS A TEST"
+#end
+;
+;
+;#129.
+@"thisisa test"
+="THIS IS A TEST"
+#end
+;
+;
+;#130.
+@"this is a test string"
+="THIS IS A TEST STRING"
+#end
+;
+;
+;#131.
+@"thisisateststring"
+="THIS IS A TEST STRING"
+#end
+;
+;
+;#132.
+@"thisisa teststring"
+="THIS IS A TEST STRING"
+#end
+;
+;
+;#133.
+@"gladiator graffitiwasfound on a plaque"
+="GLADIATOR GRAFFITI WAS FOUND ON A PLAQUE"
+#end
+;
+;
+;#134.
+@"in the citystadiumwhere fights took place"
+="IN THE CITY STADIUM WHERE FIGHTS TOOK PLACE"
+#end
+;
+;
+;#135.
+@"graffitiwasfound on a plaque in the citystadiumwhere"
+="GRAFFITI WAS FOUND ON A PLAQUE IN THE CITY STADIUM WHERE"
+#end
+;
+;
+;#136.
+@"gladiator graffitiwasfound on a plaque in the citystadiumwhere fights took place"
+="GLADIATOR GRAFFITI WAS FOUND ON A PLAQUE IN THE CITY STADIUM WHERE FIGHTS TOOK PLACE"
+#end
+;
+;
+;#137.
+@"isdichlorodiphenyltrichloroethanealongword"
+="IS DICHLORODIPHENYLTRICHLOROETHANE A LONG WORD"
+="IS DICHLORODIPHENYLTRICHLOROETHANE ALONG WORD"
+#end
+;
+;
+;#138.
+@"isdichlorodiphenyltrichloroethane a longword"
+="IS DICHLORODIPHENYLTRICHLOROETHANE A LONG WORD"
+#end
+;
+;
+;#139.
+@"spellcheckingisasimplebutrobustmodelfortherecognitionofreality"
+="SPELL CHECKING IS A SIMPLE BUT ROBUST MODEL FORT HE RECOGNITION OF REALITY"
+="SPELL CHECKING IS A SIMPLE BUT ROBUST MODEL FOR THE RECOGNITION OF REALITY"
+#end
+;
+;
+;#140.
+@"spellcheckingisasimplebutrobustmodelfor therecognition ofreality"
+="SPELL CHECKING IS A SIMPLE BUT ROBUST MODEL FOR THE RECOGNITION OF REALITY"
+#end
+;
+;
+;#141.
+@"abbotsabbabbots"
+="ABBOTS ABBOTS"
+="ABBOTS A ABBOTS"
+#end
+;
+;
+;#142. In the Ndb, “4EVER” has a Surrogate: "forever"
+@"foreverand4ever"
+="FOREVER AND forever"
+#end
+;
+;
+;#143.
+@"f o r e v e r  a n d  4 e v e r"
+="FOREVER AND forever"
+="FOR EVER AND forever"
+="FOR EVE RAND forever"
+#end
+;
+;
+;#144.
+@"whatisthetime"
+="WHAT IS THE TIME"
+#end
+;
+;
+;#145.
+@"whattimeis it"
+="WHAT TIME IS IT"
+#end
+;
+;
+;#146.
+@"whatistheday"
+="WHAT IS THE DAY"
+#end
+;
+;
+;#147.
+@"whatistoday"
+="WHAT IS TODAY"
+#end
+;
+;
+;#148.
+@"whatwasyesterday"
+="WHAT WAS YESTERDAY"
+#end
+;
+;
+;#149.
+@"whatistomorrow"
+="WHAT IS TOMORROW"
+#end
+;
+;
+;#150.
+@"whatdateis it"
+="WHAT DATE IS IT"
+#end
+;
+;
+;#151.
+@"whatisthedate"
+="WHAT IS THE DATE"
+#end
+;
+;
+;#152.
+@"whatwasthedateyesterday"
+="WHAT WAS THE DATE YESTERDAY"
+#end
+;
+;
+;#153.
+@"whatisthedatetomorrow"
+="WHAT IS THE DATE TOMORROW"
+#end
+;
+;
+;#154.
+@"whatisthemonth"
+="WHAT IS THE MONTH"
+#end
+;
+;
+;#155.
+@"whatmonthis it"
+="WHAT MONTH IS IT"
+#end
+;
+;
+;#156.
+@"whatwaslastmonth"
+="WHAT WAS LAST MONTH"
+#end
+;
+;
+;#157.
+@"whatisnextmonth"
+="WHAT IS NEXT MONTH"
+#end
+;
+;
+;#158.
+@"whatistheyear"
+="WHAT IS THE YEAR"
+="WHAT IS THEY EAR"
+#end
+;
+;
+;#159.
+@"whatisthe year"
+="WHAT IS THE YEAR"
+#end
+;
+;
+;#160.
+@"whatyearisit"
+="WHAT YEAR IS IT"
+="WHAT YEAR I SIT"
+#end
+;
+;
+;#161.
+@"whatyearis it"
+="WHAT YEAR IS IT"
+#end
+;
+;
+;#162.
+@"whatwaslastyear"
+="WHAT WAS LAST YEAR"
+#end
+;
+;
+;#163.
+@"whatisnextyear"
+="WHAT IS NEXT YEAR"
+#end
+;
+;
+;#164.
+@"tob eor nott obe"
+="TO BE OR NOT TO BE"
+#end
+;
+;
+;#165.
+@"dayiswht it"
+="DAY IS WHAT IT"
+="DAY IS WHET IT"
+#end
+;
+;
+$$$ End Of File
+ 

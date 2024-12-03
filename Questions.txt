@@ -1,0 +1,48 @@
+;Neural Database data - Questions and associated Actions
+;(c) Copyright 2024 Gary J. Lassiter. All Rights Reserved.
+;
+;	Only data after the double-semicolons will be loaded into the Ndb
+;
+;	This data is used to create 50.ndb in which each RN is a word and each ON is a
+;	question composed from those words.
+;
+;	To be successfully 'chained' to 1.ndb such that the results of an inquiry into 1.ndb
+;	can be used to query 50.ndb, resulting in the correct Action being executed:
+;			query_text --> 1.ndb --> results --> 50.ndb --> execute Action
+;	all the words in each question must be words in 1.ndb
+;
+;	The standard line format:  ;;question:surrogate:action,question2:surrogate2:action2,...
+;
+;	The numeric "ActionCode" at the beginning of each action must match the values in the
+;	SWITCH statement in NdbActions.c
+;
+;----------
+;
+;;What is the time::1_Time
+;;What time is it::1_Time
+;
+;;What is the day::2_Day(0)
+;;What is today::2_Day(0)
+;;What day is it::2_Day(0)
+;;What was yesterday::3_Day(-1)
+;;What is tomorrow::4_Day(+1)
+;
+;;What date is it::5_Date(0)
+;;What is the date::5_Date(0)
+;;What was the date yesterday::6_Date(-1)
+;;What is the date tomorrow::7_Date(+1)
+;
+;;What is the month::8_Month(0)
+;;What month is it::8_Month(0)
+;;What was last month::9_Month(-1)
+;;What is next month::10_Month(+1)
+;
+;;What is the year::11_Year(0)
+;;What year is it::11_Year(0)
+;;What was last year::12_Year(-1)
+;;What is next year::13_Year(+1)
+;
+;
+$$$ End Of File
+ 
+ 

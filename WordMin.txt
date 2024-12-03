@@ -1,0 +1,32 @@
+;Neural Database data - 86 words
+;(c) Copyright 2024 Gary J. Lassiter. All Rights Reserved.
+;
+;	Only data after the double-semicolons will be loaded into an Ndb
+;
+;	This is the minimal set of words needed for the successful recognition
+;	of all the test cases in the Test Library. Every Neural Database tested
+;	with the Test Library should include at least these words.
+;
+;	Also included in this set are all the words in the phrases that are
+;	loaded into Ndb #50, making it possible to "link" the results from
+;	a database with these words to inquiries into Ndb #50.
+;
+;----------
+;
+;;a,abbacy,abbey,abbots,abbreviate,and,be,but,checking,city,date,day
+;;dichlorodiphenyltrichloroethane,ever,fights,for,forever,fort,found,Friday
+;;from,genetic,gladiator,graffiti,he,hope,i,in,is,it,last,light,like,long
+;;mississippi,model,Monday,month,next,no,nope,not,of,on,one,or,pin,pinpoint
+;;place,plaque,point,reality,recognition,robust,Saturday,simple,spell,stadium
+;;string,Sunday,test,the,this,thrust,Thursday,thus,time,to,toad,today
+;;tomorrow,took,Tuesday,was,we,wed,Wednesday,wens,what,where,word,year,yes
+;;yesterday,yup
+;
+;
+;	Adding the non-word "4ever" with a lowercase surrogate
+;;4ever:forever
+;
+;
+$$$ End Of File
+ 
+ 
